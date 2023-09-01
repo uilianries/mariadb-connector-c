@@ -57,7 +57,6 @@ MA_HASH_CTX *ma_hash_new(unsigned int algorithm, MA_HASH_CTX *ctx)
   }
   else
   {
-    free(newctx->hashObject);
     memset(newctx, 0, sizeof(MA_HASH_CTX));
   }
 
